@@ -31,13 +31,13 @@ The latest stack can be downloaded directly in the releases (the zip file)
   [opc@wordpressserver1 html]$ sudo vim db-config.php
   
   $wpdb->add_database( array(
-  'host'     => "10.0.1.152", <-- edit     // If port is other than 3306, use host:port.
+  'host'     => "10.0.1.152", <-- edit_me     // If port is other than 3306, use host:port.
   'user'     => DB_USER,
   'password' => DB_PASSWORD,
   'name'     => DB_NAME,
   'write'    => 0,
-  'read'     => 1,
+  'read'     => 1,            <-- edit_me
   'dataset'  => 'global',
-  'timeout'  => 0.2,
+  'timeout'  => 0.2,     
    ) );
 ```
