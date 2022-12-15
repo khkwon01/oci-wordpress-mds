@@ -41,3 +41,10 @@ The latest stack can be downloaded directly in the releases (the zip file)
   'timeout'  => 0.2,     
    ) );
 ```
+4. Write test php pages 
+```
+  <!--?php
+    $result = $wpdb--->get_results("select @@hostname as host");
+    echo "<strong>host:</strong> " . $result[0]->host;
+  ?>
+```
